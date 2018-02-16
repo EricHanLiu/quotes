@@ -7,7 +7,7 @@ Run with Python 2.7 (running with python3 gives tweepy not found).
 ## How to use?
 1. Download `quotes.py` and `config_template.py` (or just `git clone`).
 2. Install tweepy using `pip install tweepy`.
-3. [Create a twitter app] (https://apps.twitter.com/) in order to use their API and get the keys to use this script.
+3. [Create a twitter app](https://apps.twitter.com/) in order to use their API and get the keys to use this script.
 4. Edit your `config_template.py` with the generated keys and rename the file `config.py`.
 5. Edit your crontab and enter the following:
 ```
