@@ -1,7 +1,7 @@
 import config
 import tweepy
-import os
 import random
+import pynotify
 
 consumer_key = config.consumer_key
 consumer_secret = config.consumer_secret
@@ -20,6 +20,7 @@ title = tweet[1]
 
 
 def sendmessage():
-    os.system('notify-send "'+title+'" "'+message+'"')
+	pynotify.init("Quotes")
+	pynotify.Notification(title,message).show()
 
 sendmessage()
