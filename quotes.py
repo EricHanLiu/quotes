@@ -13,7 +13,7 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-tweets = api.user_timeline(screen_name='GreatestQuotes', count=100)
+tweets = api.user_timeline(screen_name='GreatestQuotes', count=500)
 tweet = random.choice(tweets).text.split(' - ')
 message = tweet[0]
 title = tweet[1]
