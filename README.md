@@ -2,15 +2,14 @@
 
 This python script uses the Twitter API (using the tweepy library) and python-notify to send inspirational quotes to your computer screen through a notification bubble, provided by a quote-posting Twitter page. 
 
-For now, must be run with Python 2.7.
+Run it with `python3`.
 
 ## How to use?
 1. `git clone` this repo.
 2. Install required packages:
-	- Install tweepy using `pip install tweepy`.
-	- Install python-notify using `apt-get install python-notify`
+	- Install tweepy with `pip install tweepy`.
 3. [Create a twitter app](https://apps.twitter.com/) in order to use their API and get the keys to use this script.
-4. Edit your `config.py` with the generated keys (keep the keys as strings).
+4. Edit your `config.py` with the generated keys. 
 5. Edit your crontab and enter the following:
 ```
 */10 * * * * /usr/bin/python /home/user/path-to/quotes.py
